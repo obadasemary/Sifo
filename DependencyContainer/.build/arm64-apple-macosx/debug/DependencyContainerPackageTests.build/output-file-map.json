@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/master.swiftdeps"
+  },
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.d",
+    "object": "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.dia"
+  }
+}
