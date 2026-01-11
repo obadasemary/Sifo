@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AFAE37AC2F11B859005C6C2C /* TodoUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37AB2F11B859005C6C2C /* TodoUseCase */; };
+		AFAE37B02F11B885005C6C2C /* TodoUI in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37AF2F11B885005C6C2C /* TodoUI */; };
+		AFAE37B32F11B894005C6C2C /* TodoRepository in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37B22F11B894005C6C2C /* TodoRepository */; };
+		AFAE37B62F11B8A3005C6C2C /* TodoListView in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37B52F11B8A3005C6C2C /* TodoListView */; };
+		AFAE37B92F11B8B0005C6C2C /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37B82F11B8B0005C6C2C /* DependencyContainer */; };
+		AFAE37BC2F11B8D2005C6C2C /* TodoDetailView in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37BB2F11B8D2005C6C2C /* TodoDetailView */; };
+		AFAE37BF2F11B8E0005C6C2C /* TabBarView in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37BE2F11B8E0005C6C2C /* TabBarView */; };
+		AFAE37C22F11B8EB005C6C2C /* DevPreview in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37C12F11B8EB005C6C2C /* DevPreview */; };
+		AFAE37E62F11C8B1005C6C2C /* TodoRepository in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37E52F11C8B1005C6C2C /* TodoRepository */; };
+		AFAE37E82F11C8B8005C6C2C /* TodoUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37E72F11C8B8005C6C2C /* TodoUseCase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AFAE371B2F117BC8005C6C2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +65,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAE37BF2F11B8E0005C6C2C /* TabBarView in Frameworks */,
+				AFAE37B32F11B894005C6C2C /* TodoRepository in Frameworks */,
+				AFAE37B62F11B8A3005C6C2C /* TodoListView in Frameworks */,
+				AFAE37C22F11B8EB005C6C2C /* DevPreview in Frameworks */,
+				AFAE37BC2F11B8D2005C6C2C /* TodoDetailView in Frameworks */,
+				AFAE37B02F11B885005C6C2C /* TodoUI in Frameworks */,
+				AFAE37B92F11B8B0005C6C2C /* DependencyContainer in Frameworks */,
+				AFAE37AC2F11B859005C6C2C /* TodoUseCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAE37E82F11C8B8005C6C2C /* TodoUseCase in Frameworks */,
+				AFAE37E62F11C8B1005C6C2C /* TodoRepository in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +101,7 @@
 				AFAE370F2F117BC7005C6C2C /* Sifo */,
 				AFAE371D2F117BC8005C6C2C /* SifoTests */,
 				AFAE37272F117BC8005C6C2C /* SifoUITests */,
+				AFAE37582F11B060005C6C2C /* Frameworks */,
 				AFAE370E2F117BC7005C6C2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +114,13 @@
 				AFAE37242F117BC8005C6C2C /* SifoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AFAE37582F11B060005C6C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +143,14 @@
 			);
 			name = Sifo;
 			packageProductDependencies = (
+				AFAE37AB2F11B859005C6C2C /* TodoUseCase */,
+				AFAE37AF2F11B885005C6C2C /* TodoUI */,
+				AFAE37B22F11B894005C6C2C /* TodoRepository */,
+				AFAE37B52F11B8A3005C6C2C /* TodoListView */,
+				AFAE37B82F11B8B0005C6C2C /* DependencyContainer */,
+				AFAE37BB2F11B8D2005C6C2C /* TodoDetailView */,
+				AFAE37BE2F11B8E0005C6C2C /* TabBarView */,
+				AFAE37C12F11B8EB005C6C2C /* DevPreview */,
 			);
 			productName = Sifo;
 			productReference = AFAE370D2F117BC7005C6C2C /* Sifo.app */;
@@ -135,6 +174,8 @@
 			);
 			name = SifoTests;
 			packageProductDependencies = (
+				AFAE37E52F11C8B1005C6C2C /* TodoRepository */,
+				AFAE37E72F11C8B8005C6C2C /* TodoUseCase */,
 			);
 			productName = SifoTests;
 			productReference = AFAE371A2F117BC8005C6C2C /* SifoTests.xctest */;
@@ -195,6 +236,16 @@
 			);
 			mainGroup = AFAE37042F117BC7005C6C2C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AFAE37AA2F11B859005C6C2C /* XCLocalSwiftPackageReference "TodoUseCase" */,
+				AFAE37AE2F11B885005C6C2C /* XCLocalSwiftPackageReference "TodoUI" */,
+				AFAE37B12F11B894005C6C2C /* XCLocalSwiftPackageReference "TodoRepository" */,
+				AFAE37B42F11B8A3005C6C2C /* XCLocalSwiftPackageReference "TodoListView" */,
+				AFAE37B72F11B8B0005C6C2C /* XCLocalSwiftPackageReference "DependencyContainer" */,
+				AFAE37BA2F11B8D2005C6C2C /* XCLocalSwiftPackageReference "TodoDetailView" */,
+				AFAE37BD2F11B8E0005C6C2C /* XCLocalSwiftPackageReference "TabBarView" */,
+				AFAE37C02F11B8EB005C6C2C /* XCLocalSwiftPackageReference "DevPreview" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AFAE370E2F117BC7005C6C2C /* Products */;
 			projectDirPath = "";
@@ -578,6 +629,86 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AFAE37AA2F11B859005C6C2C /* XCLocalSwiftPackageReference "TodoUseCase" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoUseCase;
+		};
+		AFAE37AE2F11B885005C6C2C /* XCLocalSwiftPackageReference "TodoUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoUI;
+		};
+		AFAE37B12F11B894005C6C2C /* XCLocalSwiftPackageReference "TodoRepository" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoRepository;
+		};
+		AFAE37B42F11B8A3005C6C2C /* XCLocalSwiftPackageReference "TodoListView" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoListView;
+		};
+		AFAE37B72F11B8B0005C6C2C /* XCLocalSwiftPackageReference "DependencyContainer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DependencyContainer;
+		};
+		AFAE37BA2F11B8D2005C6C2C /* XCLocalSwiftPackageReference "TodoDetailView" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoDetailView;
+		};
+		AFAE37BD2F11B8E0005C6C2C /* XCLocalSwiftPackageReference "TabBarView" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TabBarView;
+		};
+		AFAE37C02F11B8EB005C6C2C /* XCLocalSwiftPackageReference "DevPreview" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DevPreview;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFAE37AB2F11B859005C6C2C /* TodoUseCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoUseCase;
+		};
+		AFAE37AF2F11B885005C6C2C /* TodoUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoUI;
+		};
+		AFAE37B22F11B894005C6C2C /* TodoRepository */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoRepository;
+		};
+		AFAE37B52F11B8A3005C6C2C /* TodoListView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoListView;
+		};
+		AFAE37B82F11B8B0005C6C2C /* DependencyContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyContainer;
+		};
+		AFAE37BB2F11B8D2005C6C2C /* TodoDetailView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoDetailView;
+		};
+		AFAE37BE2F11B8E0005C6C2C /* TabBarView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TabBarView;
+		};
+		AFAE37C12F11B8EB005C6C2C /* DevPreview */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DevPreview;
+		};
+		AFAE37E52F11C8B1005C6C2C /* TodoRepository */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFAE37B12F11B894005C6C2C /* XCLocalSwiftPackageReference "TodoRepository" */;
+			productName = TodoRepository;
+		};
+		AFAE37E72F11C8B8005C6C2C /* TodoUseCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFAE37AA2F11B859005C6C2C /* XCLocalSwiftPackageReference "TodoUseCase" */;
+			productName = TodoUseCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFAE37052F117BC7005C6C2C /* Project object */;
 }
