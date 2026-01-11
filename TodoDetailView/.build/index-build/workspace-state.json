@@ -1,0 +1,69 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "dependencycontainer",
+          "kind" : "fileSystem",
+          "location" : "/Users/obada/Developer/Sifo/DependencyContainer",
+          "name" : "DependencyContainer"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/obada/Developer/Sifo/DependencyContainer"
+        },
+        "subpath" : "dependencycontainer"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "todorepository",
+          "kind" : "fileSystem",
+          "location" : "/Users/obada/Developer/Sifo/TodoRepository",
+          "name" : "TodoRepository"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/obada/Developer/Sifo/TodoRepository"
+        },
+        "subpath" : "todorepository"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "todoui",
+          "kind" : "fileSystem",
+          "location" : "/Users/obada/Developer/Sifo/TodoUI",
+          "name" : "TodoUI"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/obada/Developer/Sifo/TodoUI"
+        },
+        "subpath" : "todoui"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "todousecase",
+          "kind" : "fileSystem",
+          "location" : "/Users/obada/Developer/Sifo/TodoUseCase",
+          "name" : "TodoUseCase"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/obada/Developer/Sifo/TodoUseCase"
+        },
+        "subpath" : "todousecase"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
