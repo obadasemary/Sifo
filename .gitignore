@@ -139,7 +139,8 @@ DerivedData/
 .bundle
 
 # Claude Code
-.claude/
+.claude/*
+!.claude/skills/
 
 # IDEs
 .vscode/
