@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "DependencyContainer-arm64-apple-macosx26.0-debug.module": ["<DependencyContainer-arm64-apple-macosx26.0-debug.module>"]
+  "DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.module": ["<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.test": ["<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "DependencyContainerTests-arm64-apple-macosx26.0-debug.module": ["<DependencyContainerTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<DependencyContainer-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<DependencyContainer-arm64-apple-macosx26.0-debug.module>","<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.test>","<DependencyContainerTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/obada/Developer/Sifo/DependencyContainer/Tests/DependencyContainerTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/DIContainer.swift"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/sources"]
+    description: "Write auxiliary file /Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/sources"
+
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.derived/runner.swift"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/sources"
+
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.derived/runner.swift"]
+
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/DIContainer.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/DIContainerTests.swift.o"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.product/Objects.LinkFileList"
+
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/obada/Developer/Sifo/DependencyContainer/Tests/DependencyContainerTests/DIContainerTests.swift"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/sources"]
+    description: "Write auxiliary file /Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/sources"
+
+  "/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<DependencyContainer-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/DIContainer.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule"]
+    outputs: ["<DependencyContainer-arm64-apple-macosx26.0-debug.module>"]
+
+  "<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerPackageTests.swiftmodule"]
+    outputs: ["<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.xctest/Contents/MacOS/DependencyContainerPackageTests"]
+    outputs: ["<DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<DependencyContainerTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/DIContainerTests.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerTests.swiftmodule"]
+    outputs: ["<DependencyContainerTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.DependencyContainer-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/DIContainer.swift","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/sources"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/DIContainer.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule"]
+    description: "Compiling Swift Module 'DependencyContainer' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","DependencyContainer","-emit-dependencies","-emit-module","-emit-module-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule","-output-file-map","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/sources","-I","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j14","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/include/DependencyContainer-Swift.h","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","dependencycontainer"]
+
+  "C.DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.derived/runner.swift","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerTests.swiftmodule","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/sources"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'DependencyContainerPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","DependencyContainerPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerPackageTests.swiftmodule","-output-file-map","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/sources","-I","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j14","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/include/DependencyContainerPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","dependencycontainer"]
+
+  "C.DependencyContainerPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainer.build/DIContainer.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.build/runner.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/DIContainerTests.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.xctest/Contents/MacOS/DependencyContainerPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.xctest/Contents/MacOS/DependencyContainerPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug","-o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.xctest/Contents/MacOS/DependencyContainerPackageTests","-module-name","DependencyContainerPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.DependencyContainerTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/Tests/DependencyContainerTests/DIContainerTests.swift","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/sources"]
+    outputs: ["/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/DIContainerTests.swift.o","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerTests.swiftmodule"]
+    description: "Compiling Swift Module 'DependencyContainerTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","DependencyContainerTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules/DependencyContainerTests.swiftmodule","-output-file-map","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/DependencyContainerTests.build/sources","-I","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j14","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/obada/Developer/Sifo/DependencyContainer/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","dependencycontainer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/","/Users/obada/Developer/Sifo/DependencyContainer/Tests/DependencyContainerTests/","/Users/obada/Developer/Sifo/DependencyContainer/Package.swift","/Users/obada/Developer/Sifo/DependencyContainer/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
