@@ -1,0 +1,1264 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.DependencyContainer-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/sources",
+      "importPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/DIContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "DependencyContainer",
+      "moduleOutputPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule",
+      "objects" : [
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/DIContainer.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/include/DependencyContainer-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "dependencycontainer"
+      ],
+      "outputFileMapPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/DIContainer.swift"
+      ],
+      "tempsPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TodoListView-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/sources",
+      "importPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListBuilder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListRouter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUseCase.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TodoListView",
+      "moduleOutputPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoListView.swiftmodule",
+      "objects" : [
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/TodoListBuilder.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/TodoListRouter.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/TodoListView.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/TodoListViewModel.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/include/TodoListView-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "todolistview"
+      ],
+      "outputFileMapPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoListView.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListBuilder.swift",
+        "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListRouter.swift",
+        "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListView.swift",
+        "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListViewModel.swift"
+      ],
+      "tempsPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TodoRepository-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/sources",
+      "importPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Category.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Todo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/TodoPriority.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Protocols/TodoRepositoryProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/TodoRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUseCase.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TodoRepository",
+      "moduleOutputPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoRepository.swiftmodule",
+      "objects" : [
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/Category.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/Todo.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/TodoPriority.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/TodoRepositoryProtocol.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/TodoRepository.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/include/TodoRepository-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "todorepository"
+      ],
+      "outputFileMapPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoRepository.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Category.swift",
+        "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Todo.swift",
+        "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/TodoPriority.swift",
+        "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Protocols/TodoRepositoryProtocol.swift",
+        "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/TodoRepository.swift"
+      ],
+      "tempsPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TodoUI-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/sources",
+      "importPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/CategoryTagView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/EmptyStateView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/ErrorView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/PriorityBadgeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoRowView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoUI.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoRepository.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUseCase.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TodoUI",
+      "moduleOutputPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUI.swiftmodule",
+      "objects" : [
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/CategoryTagView.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/EmptyStateView.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/ErrorView.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/PriorityBadgeView.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/TodoRowView.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/TodoUI.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/include/TodoUI-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "todoui"
+      ],
+      "outputFileMapPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/CategoryTagView.swift",
+        "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/EmptyStateView.swift",
+        "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/ErrorView.swift",
+        "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/PriorityBadgeView.swift",
+        "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoRowView.swift",
+        "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoUI.swift"
+      ],
+      "tempsPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TodoUseCase-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/sources",
+      "importPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/CategoryAdapter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/TodoItemAdapter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Interfaces/TodoRepositoryProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Category.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/FilterOption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Todo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoPriority.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Protocols/TodoUseCaseProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/TodoUseCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/DependencyContainer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TodoUseCase",
+      "moduleOutputPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUseCase.swiftmodule",
+      "objects" : [
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/CategoryAdapter.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/TodoItemAdapter.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/TodoRepositoryProtocol.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/Category.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/FilterOption.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/Todo.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/TodoError.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/TodoPriority.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/TodoUseCaseProtocol.swift.o",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/TodoUseCase.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/include/TodoUseCase-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "todousecase"
+      ],
+      "outputFileMapPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules/TodoUseCase.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/CategoryAdapter.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/TodoItemAdapter.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Interfaces/TodoRepositoryProtocol.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Category.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/FilterOption.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Todo.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoError.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoPriority.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Protocols/TodoUseCaseProtocol.swift",
+        "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/TodoUseCase.swift"
+      ],
+      "tempsPath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "DependencyContainer" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "DependencyContainer",
+      "-package-name",
+      "dependencycontainer",
+      "-c",
+      "/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/DIContainer.swift",
+      "-I",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/include/DependencyContainer-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "dependencycontainer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "TodoListView" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "TodoListView",
+      "-package-name",
+      "todolistview",
+      "-c",
+      "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListBuilder.swift",
+      "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListRouter.swift",
+      "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListView.swift",
+      "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListViewModel.swift",
+      "-I",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/include/TodoListView-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "todolistview",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "TodoRepository" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "TodoRepository",
+      "-package-name",
+      "todorepository",
+      "-c",
+      "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Category.swift",
+      "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Todo.swift",
+      "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/TodoPriority.swift",
+      "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Protocols/TodoRepositoryProtocol.swift",
+      "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/TodoRepository.swift",
+      "-I",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/include/TodoRepository-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "todorepository",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "TodoUI" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "TodoUI",
+      "-package-name",
+      "todoui",
+      "-c",
+      "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/CategoryTagView.swift",
+      "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/EmptyStateView.swift",
+      "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/ErrorView.swift",
+      "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/PriorityBadgeView.swift",
+      "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoRowView.swift",
+      "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoUI.swift",
+      "-I",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/include/TodoUI-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "todoui",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "TodoUseCase" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "TodoUseCase",
+      "-package-name",
+      "todousecase",
+      "-c",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/CategoryAdapter.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/TodoItemAdapter.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Interfaces/TodoRepositoryProtocol.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Category.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/FilterOption.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Todo.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoError.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoPriority.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Protocols/TodoUseCaseProtocol.swift",
+      "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/TodoUseCase.swift",
+      "-I",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/include/TodoUseCase-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "todousecase",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "DependencyContainer" : [
+
+    ],
+    "TodoListView" : [
+      "TodoUI",
+      "TodoRepository",
+      "TodoUseCase",
+      "DependencyContainer"
+    ],
+    "TodoRepository" : [
+      "TodoUseCase",
+      "DependencyContainer"
+    ],
+    "TodoUI" : [
+      "TodoRepository",
+      "TodoUseCase",
+      "DependencyContainer"
+    ],
+    "TodoUseCase" : [
+      "DependencyContainer"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/DependencyContainer/Sources/DependencyContainer/DIContainer.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/DependencyContainer.build/sources"
+    },
+    "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListBuilder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListRouter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoListView/Sources/TodoListView/TodoListViewModel.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoListView.build/sources"
+    },
+    "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Category.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/Todo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Models/TodoPriority.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/Protocols/TodoRepositoryProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoRepository/Sources/TodoRepository/TodoRepository.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoRepository.build/sources"
+    },
+    "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/CategoryTagView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/EmptyStateView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/ErrorView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/PriorityBadgeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoRowView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUI/Sources/TodoUI/TodoUI.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUI.build/sources"
+    },
+    "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/CategoryAdapter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Adapters/TodoItemAdapter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Interfaces/TodoRepositoryProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Category.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/FilterOption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/Todo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Models/TodoPriority.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/Protocols/TodoUseCaseProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/obada/Developer/Sifo/TodoUseCase/Sources/TodoUseCase/TodoUseCase.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/TodoUseCase.build/sources"
+    },
+    "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/obada/Developer/Sifo/TodoListView/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
