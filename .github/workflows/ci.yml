@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop, feature/* ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Select Xcode version
+      run: sudo xcode-select -s /Applications/Xcode_26.0.app/Contents/Developer || sudo xcode-select -s /Applications/Xcode_26.1.app/Contents/Developer || sudo xcode-select -s /Applications/Xcode_26.2.app/Contents/Developer
+
+    - name: Show build environment
+      run: |
+        xcodebuild -version
+        swift --version
+        xcrun simctl list devicetypes
+
+    - name: Cache SPM dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          .build
+          ~/Library/Developer/Xcode/DerivedData
+        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-spm-
+
+    - name: Build and test main app
+      run: |
+        xcodebuild test \
+          -workspace Sifo.xcworkspace \
+          -scheme Sifo \
+          -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest' \
+          -enableCodeCoverage YES \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO
+
+    - name: Test DependencyContainer package
+      run: swift test --package-path DependencyContainer
+
+    - name: Test TodoRepository package
+      run: swift test --package-path TodoRepository
+
+    - name: Test TodoUseCase package
+      run: swift test --package-path TodoUseCase
