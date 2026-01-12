@@ -34,12 +34,15 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-spm-
 
+    - name: List available simulators
+      run: xcrun simctl list devices available
+
     - name: Build and test main app
       run: |
         xcodebuild test \
           -workspace Sifo.xcworkspace \
           -scheme Sifo \
-          -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest' \
+          -destination 'platform=iOS Simulator,name=iPhone 16' \
           -enableCodeCoverage YES \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO
