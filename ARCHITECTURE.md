@@ -953,7 +953,7 @@ public var formData: FormData = FormData() {
 ## Navigation
 
 ### Native SwiftUI Tab API
-The app uses the native SwiftUI `Tab` API (iOS 18.0+) for tab navigation.
+The app uses the native SwiftUI `Tab` API (iOS 26.0+) for tab navigation.
 
 **TabBarView Structure**:
 ```swift
@@ -1778,7 +1778,7 @@ mkdir -p NewFeature/Tests/NewFeatureTests
 ```swift
 let package = Package(
     name: "NewFeature",
-    platforms: [.iOS(.v18)],
+    platforms: [.iOS(.v26)],
     products: [
         .library(name: "NewFeature", targets: ["NewFeature"])
     ],
