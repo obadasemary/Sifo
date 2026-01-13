@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFAE37AC2F11B859005C6C2C /* TodoUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37AB2F11B859005C6C2C /* TodoUseCase */; };
-		AFAE37B02F11B885005C6C2C /* TodoUI in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37AF2F11B885005C6C2C /* TodoUI */; };
-		AFAE37B32F11B894005C6C2C /* TodoRepository in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37B22F11B894005C6C2C /* TodoRepository */; };
-		AFAE37B62F11B8A3005C6C2C /* TodoListView in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37B52F11B8A3005C6C2C /* TodoListView */; };
-		AFAE37B92F11B8B0005C6C2C /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37B82F11B8B0005C6C2C /* DependencyContainer */; };
-		AFAE37BC2F11B8D2005C6C2C /* TodoDetailView in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37BB2F11B8D2005C6C2C /* TodoDetailView */; };
-		AFAE37BF2F11B8E0005C6C2C /* TabBarView in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37BE2F11B8E0005C6C2C /* TabBarView */; };
-		AFAE37C22F11B8EB005C6C2C /* DevPreview in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37C12F11B8EB005C6C2C /* DevPreview */; };
-		AFAE37E62F11C8B1005C6C2C /* TodoRepository in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37E52F11C8B1005C6C2C /* TodoRepository */; };
-		AFAE37E82F11C8B8005C6C2C /* TodoUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE37E72F11C8B8005C6C2C /* TodoUseCase */; };
+		AFC62A1A2F167DC2007E1C57 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A192F167DC2007E1C57 /* DependencyContainer */; };
+		AFC62A1D2F167DE2007E1C57 /* DevPreview in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A1C2F167DE2007E1C57 /* DevPreview */; };
+		AFC62A202F167DF9007E1C57 /* TodoRepository in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A1F2F167DF9007E1C57 /* TodoRepository */; };
+		AFC62A232F167E13007E1C57 /* TodoUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A222F167E13007E1C57 /* TodoUseCase */; };
+		AFC62A262F167E37007E1C57 /* TabBarView in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A252F167E37007E1C57 /* TabBarView */; };
+		AFC62A2B2F167E70007E1C57 /* TodoDetailView in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A2A2F167E70007E1C57 /* TodoDetailView */; };
+		AFC62A2E2F167E83007E1C57 /* TodoUI in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A2D2F167E83007E1C57 /* TodoUI */; };
+		AFC62A332F168056007E1C57 /* TodoListView in Frameworks */ = {isa = PBXBuildFile; productRef = AFC62A322F168056007E1C57 /* TodoListView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,14 +63,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFAE37BF2F11B8E0005C6C2C /* TabBarView in Frameworks */,
-				AFAE37B32F11B894005C6C2C /* TodoRepository in Frameworks */,
-				AFAE37B62F11B8A3005C6C2C /* TodoListView in Frameworks */,
-				AFAE37C22F11B8EB005C6C2C /* DevPreview in Frameworks */,
-				AFAE37BC2F11B8D2005C6C2C /* TodoDetailView in Frameworks */,
-				AFAE37B02F11B885005C6C2C /* TodoUI in Frameworks */,
-				AFAE37B92F11B8B0005C6C2C /* DependencyContainer in Frameworks */,
-				AFAE37AC2F11B859005C6C2C /* TodoUseCase in Frameworks */,
+				AFC62A202F167DF9007E1C57 /* TodoRepository in Frameworks */,
+				AFC62A332F168056007E1C57 /* TodoListView in Frameworks */,
+				AFC62A1A2F167DC2007E1C57 /* DependencyContainer in Frameworks */,
+				AFC62A2E2F167E83007E1C57 /* TodoUI in Frameworks */,
+				AFC62A2B2F167E70007E1C57 /* TodoDetailView in Frameworks */,
+				AFC62A232F167E13007E1C57 /* TodoUseCase in Frameworks */,
+				AFC62A262F167E37007E1C57 /* TabBarView in Frameworks */,
+				AFC62A1D2F167DE2007E1C57 /* DevPreview in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFAE37E82F11C8B8005C6C2C /* TodoUseCase in Frameworks */,
-				AFAE37E62F11C8B1005C6C2C /* TodoRepository in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +139,14 @@
 			);
 			name = Sifo;
 			packageProductDependencies = (
-				AFAE37AB2F11B859005C6C2C /* TodoUseCase */,
-				AFAE37AF2F11B885005C6C2C /* TodoUI */,
-				AFAE37B22F11B894005C6C2C /* TodoRepository */,
-				AFAE37B52F11B8A3005C6C2C /* TodoListView */,
-				AFAE37B82F11B8B0005C6C2C /* DependencyContainer */,
-				AFAE37BB2F11B8D2005C6C2C /* TodoDetailView */,
-				AFAE37BE2F11B8E0005C6C2C /* TabBarView */,
-				AFAE37C12F11B8EB005C6C2C /* DevPreview */,
+				AFC62A192F167DC2007E1C57 /* DependencyContainer */,
+				AFC62A1C2F167DE2007E1C57 /* DevPreview */,
+				AFC62A1F2F167DF9007E1C57 /* TodoRepository */,
+				AFC62A222F167E13007E1C57 /* TodoUseCase */,
+				AFC62A252F167E37007E1C57 /* TabBarView */,
+				AFC62A2A2F167E70007E1C57 /* TodoDetailView */,
+				AFC62A2D2F167E83007E1C57 /* TodoUI */,
+				AFC62A322F168056007E1C57 /* TodoListView */,
 			);
 			productName = Sifo;
 			productReference = AFAE370D2F117BC7005C6C2C /* Sifo.app */;
@@ -174,8 +170,6 @@
 			);
 			name = SifoTests;
 			packageProductDependencies = (
-				AFAE37E52F11C8B1005C6C2C /* TodoRepository */,
-				AFAE37E72F11C8B8005C6C2C /* TodoUseCase */,
 			);
 			productName = SifoTests;
 			productReference = AFAE371A2F117BC8005C6C2C /* SifoTests.xctest */;
@@ -237,14 +231,14 @@
 			mainGroup = AFAE37042F117BC7005C6C2C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AFAE37AA2F11B859005C6C2C /* XCLocalSwiftPackageReference "TodoUseCase" */,
-				AFAE37AE2F11B885005C6C2C /* XCLocalSwiftPackageReference "TodoUI" */,
-				AFAE37B12F11B894005C6C2C /* XCLocalSwiftPackageReference "TodoRepository" */,
-				AFAE37B42F11B8A3005C6C2C /* XCLocalSwiftPackageReference "TodoListView" */,
-				AFAE37B72F11B8B0005C6C2C /* XCLocalSwiftPackageReference "DependencyContainer" */,
-				AFAE37BA2F11B8D2005C6C2C /* XCLocalSwiftPackageReference "TodoDetailView" */,
-				AFAE37BD2F11B8E0005C6C2C /* XCLocalSwiftPackageReference "TabBarView" */,
-				AFAE37C02F11B8EB005C6C2C /* XCLocalSwiftPackageReference "DevPreview" */,
+				AFC62A182F167DC2007E1C57 /* XCLocalSwiftPackageReference "DependencyContainer" */,
+				AFC62A1B2F167DE2007E1C57 /* XCLocalSwiftPackageReference "DevPreview" */,
+				AFC62A1E2F167DF9007E1C57 /* XCLocalSwiftPackageReference "TodoRepository" */,
+				AFC62A212F167E13007E1C57 /* XCLocalSwiftPackageReference "TodoUseCase" */,
+				AFC62A242F167E37007E1C57 /* XCLocalSwiftPackageReference "TabBarView" */,
+				AFC62A292F167E70007E1C57 /* XCLocalSwiftPackageReference "TodoDetailView" */,
+				AFC62A2C2F167E83007E1C57 /* XCLocalSwiftPackageReference "TodoUI" */,
+				AFC62A312F168056007E1C57 /* XCLocalSwiftPackageReference "TodoListView" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AFAE370E2F117BC7005C6C2C /* Products */;
@@ -631,82 +625,72 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		AFAE37AA2F11B859005C6C2C /* XCLocalSwiftPackageReference "TodoUseCase" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = TodoUseCase;
-		};
-		AFAE37AE2F11B885005C6C2C /* XCLocalSwiftPackageReference "TodoUI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = TodoUI;
-		};
-		AFAE37B12F11B894005C6C2C /* XCLocalSwiftPackageReference "TodoRepository" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = TodoRepository;
-		};
-		AFAE37B42F11B8A3005C6C2C /* XCLocalSwiftPackageReference "TodoListView" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = TodoListView;
-		};
-		AFAE37B72F11B8B0005C6C2C /* XCLocalSwiftPackageReference "DependencyContainer" */ = {
+		AFC62A182F167DC2007E1C57 /* XCLocalSwiftPackageReference "DependencyContainer" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = DependencyContainer;
 		};
-		AFAE37BA2F11B8D2005C6C2C /* XCLocalSwiftPackageReference "TodoDetailView" */ = {
+		AFC62A1B2F167DE2007E1C57 /* XCLocalSwiftPackageReference "DevPreview" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = TodoDetailView;
+			relativePath = DevPreview;
 		};
-		AFAE37BD2F11B8E0005C6C2C /* XCLocalSwiftPackageReference "TabBarView" */ = {
+		AFC62A1E2F167DF9007E1C57 /* XCLocalSwiftPackageReference "TodoRepository" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoRepository;
+		};
+		AFC62A212F167E13007E1C57 /* XCLocalSwiftPackageReference "TodoUseCase" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoUseCase;
+		};
+		AFC62A242F167E37007E1C57 /* XCLocalSwiftPackageReference "TabBarView" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = TabBarView;
 		};
-		AFAE37C02F11B8EB005C6C2C /* XCLocalSwiftPackageReference "DevPreview" */ = {
+		AFC62A292F167E70007E1C57 /* XCLocalSwiftPackageReference "TodoDetailView" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = DevPreview;
+			relativePath = TodoDetailView;
+		};
+		AFC62A2C2F167E83007E1C57 /* XCLocalSwiftPackageReference "TodoUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoUI;
+		};
+		AFC62A312F168056007E1C57 /* XCLocalSwiftPackageReference "TodoListView" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TodoListView;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AFAE37AB2F11B859005C6C2C /* TodoUseCase */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoUseCase;
-		};
-		AFAE37AF2F11B885005C6C2C /* TodoUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoUI;
-		};
-		AFAE37B22F11B894005C6C2C /* TodoRepository */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoRepository;
-		};
-		AFAE37B52F11B8A3005C6C2C /* TodoListView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoListView;
-		};
-		AFAE37B82F11B8B0005C6C2C /* DependencyContainer */ = {
+		AFC62A192F167DC2007E1C57 /* DependencyContainer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DependencyContainer;
 		};
-		AFAE37BB2F11B8D2005C6C2C /* TodoDetailView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoDetailView;
-		};
-		AFAE37BE2F11B8E0005C6C2C /* TabBarView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TabBarView;
-		};
-		AFAE37C12F11B8EB005C6C2C /* DevPreview */ = {
+		AFC62A1C2F167DE2007E1C57 /* DevPreview */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DevPreview;
 		};
-		AFAE37E52F11C8B1005C6C2C /* TodoRepository */ = {
+		AFC62A1F2F167DF9007E1C57 /* TodoRepository */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFAE37B12F11B894005C6C2C /* XCLocalSwiftPackageReference "TodoRepository" */;
 			productName = TodoRepository;
 		};
-		AFAE37E72F11C8B8005C6C2C /* TodoUseCase */ = {
+		AFC62A222F167E13007E1C57 /* TodoUseCase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFAE37AA2F11B859005C6C2C /* XCLocalSwiftPackageReference "TodoUseCase" */;
 			productName = TodoUseCase;
+		};
+		AFC62A252F167E37007E1C57 /* TabBarView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TabBarView;
+		};
+		AFC62A2A2F167E70007E1C57 /* TodoDetailView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoDetailView;
+		};
+		AFC62A2D2F167E83007E1C57 /* TodoUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoUI;
+		};
+		AFC62A322F168056007E1C57 /* TodoListView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoListView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
