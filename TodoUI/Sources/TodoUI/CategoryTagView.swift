@@ -26,3 +26,22 @@ public struct CategoryTagView: View {
         .clipShape(.rect(cornerRadius: 4))
     }
 }
+
+// MARK: - Preview
+
+#Preview("Category Tags") {
+    VStack(alignment: .leading, spacing: 12) {
+        CategoryTagView(name: "Work", color: .red)
+        CategoryTagView(name: "Personal", color: .green)
+        CategoryTagView(name: "Shopping", color: .blue)
+        CategoryTagView(name: "Health", color: .orange)
+        CategoryTagView(name: "Finance", color: .purple)
+
+        HStack {
+            CategoryTagView(name: "Work", color: .red)
+            CategoryTagView(name: "Personal", color: .green)
+            CategoryTagView(name: "Shopping", color: .blue)
+        }
+    }
+    .padding()
+}
