@@ -13,9 +13,7 @@ let package = Package(
     dependencies: [
         .package(path: "../DependencyContainer"),
         .package(path: "../TodoRepository"),
-        .package(path: "../TodoUseCase"),
-        .package(path: "../TodoListView"),
-        .package(path: "../TodoDetailView")
+        .package(path: "../TodoUseCase")
     ],
     targets: [
         .target(
@@ -23,9 +21,7 @@ let package = Package(
             dependencies: [
                 "DependencyContainer",
                 "TodoRepository",
-                "TodoUseCase",
-                "TodoListView",
-                "TodoDetailView"
+                "TodoUseCase"
             ]
         ),
         .testTarget(
