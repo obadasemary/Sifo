@@ -4,14 +4,17 @@ import SwiftData
 import DependencyContainer
 @testable import TodoUseCase
 @testable import TodoRepository
+import class TodoUseCase.Category
+public typealias TodoCategory = Category
 
 @MainActor
 struct TodoUseCaseTests {
 
     // Fake repository for testing
     final class FakeTodoRepository: TodoRepositoryProtocol {
+        
         var todos: [Todo] = []
-        var categories: [Category] = []
+        var categories: [TodoCategory] = []
 
         func createTodo(title: String, notes: String, dueDate: Date?, priority: TodoPriority) async throws -> Todo {
             let todo = Todo(title: title, notes: notes, dueDate: dueDate, priorityRawValue: priority.rawValue)
