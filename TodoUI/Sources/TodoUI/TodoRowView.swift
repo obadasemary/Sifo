@@ -1,6 +1,8 @@
 import SwiftUI
+import SwiftData
 import TodoRepository
 import TodoUseCase
+import DevPreview
 
 /// Reusable row view for displaying a todo item
 public struct TodoRowView: View {
@@ -80,5 +82,68 @@ public struct TodoRowView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+    }
+}
+
+// MARK: - Preview
+
+#Preview("Todo Row - Active") {
+    @Previewable @State var todos: [TodoItemAdapter] = []
+
+    let useCase = try! DevPreview.shared.container.requireResolve(TodoUseCaseProtocol.self)
+
+    List {
+        if let todo = todos.first {
+            TodoRowView(
+                todo: todo,
+                toggleAction: { print("Toggle: \(todo.title)") },
+                tapAction: { print("Tap: \(todo.title)") }
+            )
+        } else {
+            ProgressView()
+        }
+    }
+    .task {
+        todos = (try? await useCase.fetchTodos(filter: .active)) ?? []
+    }
+}
+
+#Preview("Todo Row - Completed") {
+    @Previewable @State var todos: [TodoItemAdapter] = []
+
+    let useCase = try! DevPreview.shared.container.requireResolve(TodoUseCaseProtocol.self)
+
+    List {
+        if let todo = todos.first {
+            TodoRowView(
+                todo: todo,
+                toggleAction: { print("Toggle: \(todo.title)") },
+                tapAction: { print("Tap: \(todo.title)") }
+            )
+        } else {
+            ProgressView()
+        }
+    }
+    .task {
+        todos = (try? await useCase.fetchTodos(filter: .completed)) ?? []
+    }
+}
+
+#Preview("Todo Row - All States") {
+    @Previewable @State var todos: [TodoItemAdapter] = []
+
+    let useCase = try! DevPreview.shared.container.requireResolve(TodoUseCaseProtocol.self)
+
+    List {
+        ForEach(todos) { todo in
+            TodoRowView(
+                todo: todo,
+                toggleAction: { print("Toggle: \(todo.title)") },
+                tapAction: { print("Tap: \(todo.title)") }
+            )
+        }
+    }
+    .task {
+        todos = (try? await useCase.fetchTodos(filter: .all)) ?? []
     }
 }

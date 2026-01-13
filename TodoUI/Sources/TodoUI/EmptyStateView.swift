@@ -30,3 +30,23 @@ public struct EmptyStateView: View {
         }
     }
 }
+
+// MARK: - Preview
+
+#Preview("Empty State - No Todos") {
+    EmptyStateView(
+        icon: "checklist",
+        message: "No todos yet",
+        actionTitle: "Add Todo",
+        action: { print("Add todo tapped") }
+    )
+}
+
+#Preview("Empty State - No Results") {
+    EmptyStateView(
+        icon: "magnifyingglass",
+        message: "No results found",
+        actionTitle: "Clear Filter",
+        action: { print("Clear filter tapped") }
+    )
+}

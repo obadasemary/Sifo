@@ -12,14 +12,16 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../TodoRepository"),
-        .package(path: "../TodoUseCase")
+        .package(path: "../TodoUseCase"),
+        .package(path: "../DevPreview")
     ],
     targets: [
         .target(
             name: "TodoUI",
             dependencies: [
                 "TodoRepository",
-                "TodoUseCase"
+                "TodoUseCase",
+                "DevPreview"
             ]
         ),
         .testTarget(

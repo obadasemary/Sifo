@@ -30,3 +30,23 @@ public struct PriorityBadgeView: View {
         }
     }
 }
+
+// MARK: - Preview
+
+#Preview("Priority Badges") {
+    VStack(alignment: .leading, spacing: 12) {
+        PriorityBadgeView(priority: .none)
+        PriorityBadgeView(priority: .low)
+        PriorityBadgeView(priority: .medium)
+        PriorityBadgeView(priority: .high)
+
+        Divider()
+
+        HStack {
+            PriorityBadgeView(priority: .low)
+            PriorityBadgeView(priority: .medium)
+            PriorityBadgeView(priority: .high)
+        }
+    }
+    .padding()
+}
