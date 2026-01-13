@@ -1,6 +1,7 @@
 import SwiftUI
 import TodoUseCase
 import TodoUI
+import DevPreview
 
 public struct TodoListView: View {
     @State public var viewModel: TodoListViewModel
@@ -121,4 +122,70 @@ public struct TodoListView: View {
             set: { if !$0 { viewModel.cancelDelete() } }
         )
     }
+}
+
+// MARK: - Preview
+
+#Preview("Todo List - Loaded") {
+    let container = DevPreview.shared.container
+    let useCase = try! container.requireResolve(TodoUseCaseProtocol.self)
+
+    // Mock router for preview
+    final class MockRouter: TodoListRouterProtocol {
+        func navigateToAddTodo() {
+            print("Navigate to add todo")
+        }
+
+        func navigateToEditTodo(_ todo: TodoItemAdapter) {
+            print("Navigate to edit todo: \(todo.title)")
+        }
+    }
+
+    let viewModel = TodoListViewModel(useCase: useCase, router: MockRouter())
+    return TodoListView(viewModel: viewModel)
+        .modelContainer(DevPreview.shared.modelContainer)
+}
+
+#Preview("Todo List - Empty") {
+    let container = DevPreview.shared.container
+    let useCase = try! container.requireResolve(TodoUseCaseProtocol.self)
+
+    // Mock router for preview
+    final class MockRouter: TodoListRouterProtocol {
+        func navigateToAddTodo() {
+            print("Navigate to add todo")
+        }
+
+        func navigateToEditTodo(_ todo: TodoItemAdapter) {
+            print("Navigate to edit todo: \(todo.title)")
+        }
+    }
+
+    let viewModel = TodoListViewModel(useCase: useCase, router: MockRouter())
+    viewModel.currentFilter = .completed // Show completed filter (likely empty)
+
+    return TodoListView(viewModel: viewModel)
+        .modelContainer(DevPreview.shared.modelContainer)
+}
+
+#Preview("Todo List - Error") {
+    let container = DevPreview.shared.container
+    let useCase = try! container.requireResolve(TodoUseCaseProtocol.self)
+
+    // Mock router for preview
+    final class MockRouter: TodoListRouterProtocol {
+        func navigateToAddTodo() {
+            print("Navigate to add todo")
+        }
+
+        func navigateToEditTodo(_ todo: TodoItemAdapter) {
+            print("Navigate to edit todo: \(todo.title)")
+        }
+    }
+
+    let viewModel = TodoListViewModel(useCase: useCase, router: MockRouter())
+    viewModel.state = .error("Failed to load todos. Please try again.")
+
+    return TodoListView(viewModel: viewModel)
+        .modelContainer(DevPreview.shared.modelContainer)
 }
