@@ -1,6 +1,7 @@
 import SwiftUI
 import TodoUseCase
 import TodoUI
+import DevPreview
 
 public struct TodoDetailView: View {
     @State public var viewModel: TodoDetailViewModel
@@ -186,4 +187,46 @@ public struct TodoDetailView: View {
             }
         )
     }
+}
+
+// MARK: - Preview
+
+#Preview("New Todo") {
+    let container = DevPreview.shared.container
+    let useCase = try! container.requireResolve(TodoUseCaseProtocol.self)
+
+    let viewModel = TodoDetailViewModel(useCase: useCase, existingTodo: nil)
+    return TodoDetailView(viewModel: viewModel)
+        .modelContainer(DevPreview.shared.modelContainer)
+}
+
+#Preview("Edit Todo") {
+    @Previewable @State var existingTodo: TodoItemAdapter? = nil
+
+    let container = DevPreview.shared.container
+    let useCase = try! container.requireResolve(TodoUseCaseProtocol.self)
+
+    return Group {
+        if let todo = existingTodo {
+            TodoDetailView(viewModel: TodoDetailViewModel(useCase: useCase, existingTodo: todo))
+        } else {
+            ProgressView()
+                .task {
+                    let todos = try? await useCase.fetchTodos(filter: .all)
+                    existingTodo = todos?.first
+                }
+        }
+    }
+    .modelContainer(DevPreview.shared.modelContainer)
+}
+
+#Preview("Form with Error") {
+    let container = DevPreview.shared.container
+    let useCase = try! container.requireResolve(TodoUseCaseProtocol.self)
+
+    let viewModel = TodoDetailViewModel(useCase: useCase, existingTodo: nil)
+    viewModel.state = .error("Failed to save todo. Please try again.")
+
+    return TodoDetailView(viewModel: viewModel)
+        .modelContainer(DevPreview.shared.modelContainer)
 }
