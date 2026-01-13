@@ -2,6 +2,7 @@ import Testing
 import Foundation
 import SwiftData
 @testable import TodoRepository
+@testable import TodoUseCase
 
 @MainActor
 struct TodoRepositoryTests {
