@@ -3,6 +3,7 @@ import DependencyContainer
 import TodoListView
 import TodoDetailView
 import TodoUseCase
+import DevPreview
 
 /// Main tab bar view with navigation coordination
 public struct TabBarView: View {
@@ -104,3 +105,10 @@ private final class TodoListRouterImpl: TodoListRouterProtocol {
 }
 
 extension TodoItemAdapter: Identifiable {}
+
+// MARK: - Preview
+
+#Preview("Tab Bar with Todos") {
+    TabBarView(container: DevPreview.shared.container)
+        .modelContainer(DevPreview.shared.modelContainer)
+}
