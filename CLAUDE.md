@@ -20,10 +20,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Build the app
-xcodebuild -workspace Sifo.xcworkspace -scheme Sifo -destination 'platform=iOS Simulator,name=iPhone 16' build
+xcodebuild -workspace Sifo.xcworkspace -scheme Sifo -destination 'platform=iOS Simulator,name=iPhone 17 Pro' build
 
 # Run tests
-xcodebuild test -workspace Sifo.xcworkspace -scheme Sifo -destination 'platform=iOS Simulator,name=iPhone 16'
+xcodebuild test -workspace Sifo.xcworkspace -scheme Sifo -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
 
 # Run specific package tests
 swift test --package-path DependencyContainer

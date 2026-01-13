@@ -2,6 +2,30 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DevPreview">
+   </FileRef>
+   <FileRef
+      location = "group:DependencyContainer">
+   </FileRef>
+   <FileRef
       location = "group:Sifo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TabBarView">
+   </FileRef>
+   <FileRef
+      location = "group:TodoListView">
+   </FileRef>
+   <FileRef
+      location = "group:TodoDetailView">
+   </FileRef>
+   <FileRef
+      location = "group:TodoRepository">
+   </FileRef>
+   <FileRef
+      location = "group:TodoUI">
+   </FileRef>
+   <FileRef
+      location = "group:TodoUseCase">
    </FileRef>
 </Workspace>
