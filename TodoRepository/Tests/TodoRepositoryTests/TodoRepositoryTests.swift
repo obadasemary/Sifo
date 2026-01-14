@@ -1,8 +1,8 @@
 import Testing
 import Foundation
 import SwiftData
+import TodoUseCase
 @testable import TodoRepository
-@testable import TodoUseCase
 
 @MainActor
 struct TodoRepositoryTests {
