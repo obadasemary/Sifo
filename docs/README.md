@@ -1,5 +1,11 @@
 # Sifo Documentation
 
+[![iOS Build & Test](https://github.com/obadasemary/Sifo/actions/workflows/CI.yml/badge.svg)](https://github.com/obadasemary/Sifo/actions/workflows/CI.yml)
+[![Swift](https://img.shields.io/badge/Swift-6.2-orange.svg)](https://swift.org)
+[![iOS](https://img.shields.io/badge/iOS-26.2-blue.svg)](https://developer.apple.com/ios/)
+[![Xcode](https://img.shields.io/badge/Xcode--26.2-blue.svg)](https://developer.apple.com/xcode/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 Welcome to the comprehensive documentation for Sifo, a native iOS todo list application built with Swift 6.2, SwiftUI, and Clean Architecture principles.
 
 ## 📚 Documentation Index
