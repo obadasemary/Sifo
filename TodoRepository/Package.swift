@@ -24,7 +24,10 @@ let package = Package(
         ),
         .testTarget(
             name: "TodoRepositoryTests",
-            dependencies: ["TodoRepository"]
+            dependencies: [
+                "TodoRepository",
+                "TodoUseCase"
+            ]
         )
     ]
 )
