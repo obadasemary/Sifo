@@ -1,6 +1,6 @@
 # Sifo Documentation
 
-[![iOS Build & Test](https://github.com/obadasemary/Sifo/actions/workflows/CI.yml/badge.svg)](https://github.com/obadasemary/Sifo/actions/workflows/CI.yml)
+[![CI](https://github.com/obadasemary/Sifo/actions/workflows/ci.yml/badge.svg)](https://github.com/obadasemary/Sifo/actions/workflows/ci.yml)
 [![Swift](https://img.shields.io/badge/Swift-6.2-orange.svg)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-26.2-blue.svg)](https://developer.apple.com/ios/)
 [![Xcode](https://img.shields.io/badge/Xcode--26.2-blue.svg)](https://developer.apple.com/xcode/)
