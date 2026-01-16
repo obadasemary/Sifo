@@ -2,6 +2,7 @@ import SwiftUI
 import DependencyContainer
 import TodoListView
 import TodoDetailView
+import ChartsView
 import TodoUseCase
 import DevPreview
 
@@ -17,6 +18,10 @@ public struct TabBarView: View {
         TabView {
             Tab("Todos", systemImage: "checklist") {
                 TodoListCoordinator(container: container)
+            }
+
+            Tab("Charts", systemImage: "chart.bar") {
+                ChartsCoordinator(container: container)
             }
         }
     }
@@ -102,6 +107,43 @@ private final class TodoListRouterImpl: TodoListRouterProtocol {
     func navigateToEditTodo(_ todo: TodoItemAdapter) {
         showEditSheet(todo)
     }
+}
+
+/// Coordinator for charts view (minimal since no navigation needed)
+private struct ChartsCoordinator: View {
+    private let container: DIContainer
+    @State private var chartsViewModel: ChartsViewModel?
+
+    init(container: DIContainer) {
+        self.container = container
+    }
+
+    var body: some View {
+        // Build view model once on first render
+        if chartsViewModel == nil {
+            Color.clear.onAppear {
+                buildViewModel()
+            }
+        } else if let viewModel = chartsViewModel {
+            ChartsView(viewModel: viewModel)
+        } else {
+            Text("Failed to initialize")
+                .foregroundStyle(.red)
+        }
+    }
+
+    private func buildViewModel() {
+        if let useCase = try? container.requireResolve(TodoUseCaseProtocol.self) {
+            let router = ChartsRouterImpl()
+            chartsViewModel = ChartsViewModel(useCase: useCase, router: router)
+        }
+    }
+}
+
+/// Router implementation for charts (currently empty)
+@MainActor
+private final class ChartsRouterImpl: ChartsRouterProtocol {
+    // No navigation methods needed yet
 }
 
 extension TodoItemAdapter: Identifiable {}
