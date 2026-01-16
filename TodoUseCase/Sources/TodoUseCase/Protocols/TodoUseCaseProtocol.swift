@@ -9,6 +9,9 @@ public protocol TodoUseCaseProtocol {
     func fetchTodos(filter: FilterOption) async throws -> [TodoItemAdapter]
     func fetchTodo(byId id: PersistentIdentifier) async throws -> TodoItemAdapter?
 
+    // Statistics
+    func fetchTodoStatistics() async throws -> TodoStatistics
+
     // CRUD operations
     func createTodo(
         title: String,

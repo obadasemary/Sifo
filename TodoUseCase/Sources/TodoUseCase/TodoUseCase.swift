@@ -34,6 +34,72 @@ public final class TodoUseCase: TodoUseCaseProtocol {
         }
     }
 
+    // MARK: - Statistics
+
+    public func fetchTodoStatistics() async throws -> TodoStatistics {
+        do {
+            // Fetch all todos (no filter)
+            let todos = try await repository.fetchAllTodos()
+            let adapters = todos.map(TodoItemAdapter.from)
+
+            // Compute completion stats
+            let total = adapters.count
+            let completed = adapters.filter { $0.isCompleted }.count
+            let active = total - completed
+            let rate = total > 0 ? Double(completed) / Double(total) : 0.0
+
+            // Compute priority breakdown
+            let noPriority = adapters.filter { $0.priority == .none }.count
+            let low = adapters.filter { $0.priority == .low }.count
+            let medium = adapters.filter { $0.priority == .medium }.count
+            let high = adapters.filter { $0.priority == .high }.count
+
+            // Compute time-based stats
+            let overdue = adapters.filter { $0.isOverdue }.count
+            let dueToday = adapters.filter { $0.isDueToday }.count
+            let upcoming = adapters.filter { todo in
+                guard let dueDate = todo.dueDate, !todo.isCompleted else { return false }
+                return dueDate > Date() && !todo.isDueToday
+            }.count
+
+            // Compute category statistics
+            var categoryCount: [String: (name: String, colorHex: String, count: Int)] = [:]
+            for adapter in adapters {
+                for category in adapter.categories {
+                    let key = category.name
+                    if let existing = categoryCount[key] {
+                        categoryCount[key] = (existing.name, existing.colorHex, existing.count + 1)
+                    } else {
+                        categoryCount[key] = (category.name, category.colorHex, 1)
+                    }
+                }
+            }
+
+            // Get top 5 categories by count
+            let topCategories = categoryCount.values
+                .sorted { $0.count > $1.count }
+                .prefix(5)
+                .map { CategoryStatistic(name: $0.name, colorHex: $0.colorHex, todoCount: $0.count) }
+
+            return TodoStatistics(
+                totalTodos: total,
+                completedTodos: completed,
+                activeTodos: active,
+                completionRate: rate,
+                noPriorityCount: noPriority,
+                lowPriorityCount: low,
+                mediumPriorityCount: medium,
+                highPriorityCount: high,
+                overdueTodos: overdue,
+                dueTodayTodos: dueToday,
+                upcomingTodos: upcoming,
+                topCategories: Array(topCategories)
+            )
+        } catch {
+            throw TodoError.unknown(error.localizedDescription)
+        }
+    }
+
     // MARK: - CRUD Operations
 
     public func createTodo(

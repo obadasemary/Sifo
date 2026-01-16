@@ -2,37 +2,33 @@
 import PackageDescription
 
 let package = Package(
-    name: "TabBarView",
-    platforms: [.iOS(.v18)],
+    name: "ChartsView",
+    platforms: [.iOS(.v17)],
     products: [
         .library(
-            name: "TabBarView",
-            targets: ["TabBarView"]
+            name: "ChartsView",
+            targets: ["ChartsView"]
         )
     ],
     dependencies: [
         .package(path: "../DependencyContainer"),
-        .package(path: "../TodoListView"),
-        .package(path: "../TodoDetailView"),
-        .package(path: "../ChartsView"),
         .package(path: "../TodoUseCase"),
+        .package(path: "../TodoUI"),
         .package(path: "../DevPreview")
     ],
     targets: [
         .target(
-            name: "TabBarView",
+            name: "ChartsView",
             dependencies: [
                 "DependencyContainer",
-                "TodoListView",
-                "TodoDetailView",
-                "ChartsView",
                 "TodoUseCase",
+                "TodoUI",
                 "DevPreview"
             ]
         ),
         .testTarget(
-            name: "TabBarViewTests",
-            dependencies: ["TabBarView"]
+            name: "ChartsViewTests",
+            dependencies: ["ChartsView"]
         )
     ]
 )
